@@ -5,15 +5,15 @@ const passwordInput = loginForm.elements['password'];
 loginForm.addEventListener('submit', event => {
   event.preventDefault();
 
-  const emailInput = emailInput.value.trim();
-  const passwordInput = passwordInput.value.trim();
+  const emailInputValue = emailInput.value.trim();
+  const passwordInputValue = passwordInput.value.trim();
 
-  if (emailInput === '' || passwordInput=== '') {
+  if (emailInputValue === '' || passwordInputValue === '') {
     alert('All form fields must be filled in');
   } else {
       const formData = {
-        email: emailInput,
-        password: passwordInput
+        email: emailInputValue,
+        password: passwordInputValue
       };
 
       console.log(formData);
