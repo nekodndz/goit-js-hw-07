@@ -11,6 +11,7 @@ const boxesContainer = document.querySelector('#boxes');
 
 
 function createBoxes(amount) {
+  destroyBoxes();
   const fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i++) {
     const div = document.createElement('div');
